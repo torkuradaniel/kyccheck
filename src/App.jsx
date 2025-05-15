@@ -206,11 +206,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>JSON Field Comparator</h1>
+      <h1>Verto Onboarding Data Checker</h1>
+      <p>Please use this tool to check that you are passing the correct onboarding data that fulfills the requirements of the onboarding process. </p>
       
       <div className="container">
         <div className="json-section">
-          <h2>Predefined JSON Structure</h2>
+          <h2>Predefined JSON</h2>
           <pre>{JSON.stringify(PREDEFINED_JSON, null, 2)}</pre>
         </div>
 
@@ -241,7 +242,7 @@ function App() {
             onClick={handleCompare} 
             style={{ marginTop: '10px', width: '100%' }} // Full width
           >
-            Compare JSON
+            Compare JSON (scroll to bottom to see results)
           </button>
         </div>
       </div>
